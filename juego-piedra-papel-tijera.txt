@@ -1,0 +1,37 @@
+plantear solucion a proyecto de implementacion de juego : Piedra,Papel,Tijera.
+
+1- iniciar nuevo repositorio GIT.
+
+2- crear documento HTML en blanco con una secuencia de comandos.
+(Sugerencia: se recomienda vincular un archivo .js externo). 
+
+3- comience con una función llamada getComputerChoiceque devolverá aleatoriamente
+ "Piedra", "Papel" o "Tijeras". Usaremos esta función en el juego para hacer que la
+ computadora juegue.
+
+4- Escribe una función que reproduzca una sola ronda de Piedra, Papel o Tijera. La 
+función debe tomar dos parámetros ( playerSelectiony computerSelection) y luego 
+devolver una cadena que declare al ganador de la ronda así:
+"You Lose! Paper beats Rock".
+   
+   *  Haga que el parámetro playerSelection de su función no distinga entre mayúsculas
+      y minúsculas (para que los usuarios puedan ingresar , rock o cualquier otra 
+      variación). ROCK  RocK.
+
+5- imprimir resultados en pantalla  console.log().
+
+   **  ejemplo:  **  
+  function playRound(playerSelection, computerSelection) {
+  // your code here!
+  }
+ 
+  const playerSelection = "rock";
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
+
+6- Escribe una NUEVA función llamada game(). Utilice la función anterior dentro de 
+   esta para jugar un juego de 5 rondas que lleva la puntuación e informa un ganador
+   o un perdedor al final.
+
+   **  Úse prompt()para obtener información del usuario.  **
+
